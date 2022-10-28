@@ -1,0 +1,66 @@
+.contenidoGeneral {
+
+    background-image: linear-gradient(#ffffff, #F7CE68, #FBAB7E);
+    height: 2100px;
+
+}
+
+.barra-navegacion {
+    background-image: linear-gradient(#FBAB7E, #ffffff, #F7CE68);
+}
+
+.inicio {
+    height: 300px;
+    padding: 80px;
+    border-radius: 35%;
+    box-shadow: 7px 7px 5px black;
+}
+
+.contacto {
+    border-radius: 25%;
+    box-shadow: 10px 10px 5px #672a07;
+    height: 500px;
+    padding: 80px;
+}
+
+.navbar_footer {
+    background-image: linear-gradient(#FBAB7E, #F7CE68, #ffffff);
+    height: 70px;
+
+}
+
+.mi_card {
+    background-color: transparent;
+    background-image: linear-gradient(#ed691c, #dcab2f, #c4eba2);
+    border-radius: 50px 10px;
+    box-shadow: 10px 10px 5px #672a07;
+    padding: 3px;
+    height: auto;
+
+
+}
+
+.cardImage {
+    border-radius: 50px 10px;
+    background-color: transparent;
+}
+
+.msg,
+.msgError {
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    max-width: 50%;
+    background-color: #a8e524;
+    color: #f0fff3;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #1b4909;
+    padding: 0.7rem;
+    border-radius: 0.5rem;
+}
+
+.msgError {
+    background-color: rgb(233, 141, 108);
+    border-color: #491009;
+}

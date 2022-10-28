@@ -6,13 +6,13 @@
 @section('pagetitle', 'Quienes somos')
 
 @section('content')
-Here’s what you need to know before getting started with the navbar:
-
-Navbars require a wrapping .navbar with .navbar-expand{-sm|-md|-lg|-xl|-xxl} for responsive collapsing and color scheme classes.
-Navbars and their contents are fluid by default. Change the container to limit their horizontal width in different ways.
-Use our spacing and flex utility classes for controlling spacing and alignment within navbars.
-Navbars are responsive by default, but you can easily modify them to change that. Responsive behavior depends on our Collapse JavaScript plugin.
-Ensure accessibility by using a <nav> element or, if using a more generic element such as a <div>, add a role="navigation" to every navbar to explicitly identify it as a landmark region for users of assistive technologies.
+<div class="inicio container-md mt-5">
+    <p>
+        La Asociación Española de Cerveceros Artesanos Independientes nace de la necesidad de aunar a los integrantes del sector de la cerveza artesanal en España, que ha experimentado un notable crecimiento en los últimos años.
+    El nacimiento del colectivo hay que situarlo en el 7 de junio de 2014, con la intención de definir, promocionar y defender al sector de la cerveza artesana y de sus asociados.
+    El compromiso común de los cerveceros artesanales por la calidad de la cerveza, la sostenibilidad y el desarrollo de la economía y cultura de proximidad son los pilares de esta asociación.
+    </p>
+    </div>
 @endsection
 
 @section('pagetitle', 'Quienes somos')

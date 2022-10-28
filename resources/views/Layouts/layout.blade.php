@@ -1,28 +1,8 @@
 @extends('Layouts.app')
 @section('body')
-  
 
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>@yield('title')</title>
-<!--CSS link general-->
-
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="{{asset('css/micss.css')}}">
-    <!--Js bundle-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <!--Mi js-->
-   <script type="text/javascript" src="{{asset('js/mijs.js')}}"></script>
-</head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="barra-navegacion navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
               <a class="navbar-brand" href="/"><img src="{{asset('/img/logo.png')}}" height="60" alt=""></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,13 +12,13 @@
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
                   <li class="nav-item">
-                    <a class="nav-link active" href="{{url("/breweries")}}">Cervecerías</a>
+                    <a class="nav-link active fs-5" href="{{url("/breweries")}}">Cervecerías</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="/contact">Contacto</a>
+                    <a class="nav-link fs-5" href="/contact">Contacto</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" href="/about">Quienes Somos</a>
+                    <a class="nav-link active fs-5" href="/about">Quienes Somos</a>
                   </li> 
                 </ul>
                 <form class="d-flex">
@@ -48,22 +28,18 @@
               </div>
             </div>
           </nav>
-    </header>
-    <br>
-    <h1 class="text-center">@yield('pagetitle')</h1>
-   {{--  <h2>Las Mejores cervezas artesanas españolas</h2> --}}
+   
+          <x-flash /> {{--  llamamos a flash.blade.php para hacer que el mensaje de comprobacion desaparezca --}}
 
-    <div class="container-fluid" style="max-width: 800px">
-     @yield('content')
-      </div>
+          <div class="container-fluid pagetitle" style="width: 800px">
+               <h1 class="text-center"> @yield('pagetitle') </h1>
+           @yield('content') 
 
-      <x-message type="" message="" /> <!-- no me aparece el espacio-->
-
-      <nav class="navbar navbar-expand-lg bg-light mt-4">
-        <p class="w-100 text-center">&copy; 2022, Hackademy PT3</p>
-      </nav>
-      
-      @endsection
-      
-</body>
-</html>
+         </div> 
+       <br>
+       <div class="container-fluid">
+        <nav class="navbar navbar_footer navbar-expand-lg fixed-bottom"> 
+          <p class="w-100 text-center"> &copy; 2022, Breweries Media Network </p>
+        </nav>
+  </div>
+  @endsection
